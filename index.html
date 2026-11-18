@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#241c32">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="For Zaynab ♡">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="A little universe made just for Zaynab's 22nd birthday.">
+  <meta property="og:title" content="Happy 22nd Birthday, Zaynab ♡">
+  <meta property="og:description" content="Five years. One very special birthday. A little surprise, just for you.">
+  <title>For Zaynab ♡ Happy 22nd Birthday</title>
+  <link rel="icon" href="assets/heart.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="heart-layer" aria-hidden="true"></div>
+  <header class="site-header">
+    <a href="#top" class="wordmark" aria-label="Back to the top"><span class="wordmark-heart">♡</span> for zaynab<span class="brand-dot">.</span></a>
+    <div class="header-right"><span class="header-date">22 looks lovely on you</span><button type="button" id="sound-toggle" class="sound-toggle" aria-pressed="false" title="Turn on gentle sound effects"><span class="sound-icon" aria-hidden="true">♪</span><span id="sound-label">sound off</span></button></div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="sky-speck s1" aria-hidden="true">✦</div><div class="sky-speck s2" aria-hidden="true">✳</div><div class="sky-speck s3" aria-hidden="true">✧</div><div class="sky-speck s4" aria-hidden="true">✦</div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="pill pill-rose"><span class="tiny-star">✳</span> a birthday surprise from Saad, made just for you</div>
+          <h1 id="hero-title">Happy 22nd,<br><em>Zaynab.</em><span class="little-heart" aria-hidden="true">♡</span></h1>
+          <p class="hero-lede">Five years ago, on your birthday, I met someone I could never have guessed would mean so much to me.</p>
+          <p class="hero-note">And somehow, after all this time, you're still the cutest girl I know.</p>
+          <div class="hero-actions"><a class="btn btn-rose" href="#our-story" id="begin-btn">Open your little universe <span aria-hidden="true">↗</span></a><button type="button" class="btn btn-ghost" id="send-heart">Send a little heart <span aria-hidden="true">♡</span></button></div>
+          <p class="heart-tally" id="heart-tally" aria-live="polite">a whole lot of love, from Saad to Zaynab</p>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div>
+          <span class="hero-22" aria-hidden="true">22</span>
+          <div class="floating-label floating-label-top">my favorite kind<br>of coincidence <span>✧</span></div>
+          <button type="button" class="hero-photo" data-photo="0" aria-label="See our photo, enlarged"><img src="assets/together.webp" alt="A smiling selfie of us together on a rooftop" fetchpriority="high"><span class="photo-bottom">look at those smiles ♡</span></button>
+          <div class="floating-label floating-label-bottom">5 years since hello <span>♡</span></div>
+          <span class="hero-flower" aria-hidden="true">✿</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#our-story">keep scrolling <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <div class="ribbon" aria-hidden="true"><div>✧ &nbsp; FIVE YEARS OF LITTLE MOMENTS &nbsp; ♡ &nbsp; HAPPY 22ND BIRTHDAY &nbsp; ✧ &nbsp; FIVE YEARS OF LITTLE MOMENTS &nbsp; ♡ &nbsp; HAPPY 22ND BIRTHDAY &nbsp; ✧</div></div>
+
+    <section class="story section" id="our-story" aria-labelledby="story-title">
+      <div class="container">
+        <div class="section-top"><span class="eyebrow">01 / ONCE UPON A BIRTHDAY</span><span class="mini-decoration" aria-hidden="true">✧ · ♡ · ✧</span></div>
+        <div class="story-heading"><div><h2 id="story-title">Our story was never<br><em>just a straight line.</em></h2><p>But it started on the most fitting day possible: your birthday. Tap the little chapters.</p></div><div class="five-years"><strong>5</strong><span>years since<br>our first hello</span></div></div>
+        <div class="chapter-list" role="tablist" aria-label="Five chapters of our story" id="chapter-tabs"></div>
+        <div class="chapter-panel" id="chapter-panel" role="tabpanel" tabindex="0" aria-live="polite" aria-labelledby="chapter-tab-0"><div class="chapter-icon" id="chapter-icon" aria-hidden="true">✦</div><div class="chapter-panel-copy"><span class="chapter-label" id="chapter-label">CHAPTER ONE</span><h3 id="chapter-heading">The day we met</h3><p id="chapter-description">Of all the days in the year, we met on yours.</p></div><div class="chapter-stamp" aria-hidden="true">dear<br>zaynab ♡</div></div>
+        <p class="under-note">Some chapters were messy. Some were beautiful. Every story is made of both. <span>♡</span></p>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading center"><span class="eyebrow">02 / LITTLE THINGS, BIG FEELINGS</span><h2 id="gallery-title">A couple of moments<br><em>worth keeping.</em></h2><p>Not every picture has to be perfectly in focus to hold a good memory.</p></div>
+        <div class="photo-wall">
+          <button type="button" class="polaroid polaroid-first" data-photo="0" aria-label="Open our smiling selfie"><img src="assets/together.webp" alt="The two of us smiling together"><span class="polaroid-caption">the smiles ♡</span><span class="tape tape-a" aria-hidden="true"></span></button>
+          <div class="photo-wall-center" aria-hidden="true"><span>the little<br>moments<br><em>are the big ones.</em></span><span class="drawn-heart">♡</span></div>
+          <button type="button" class="polaroid polaroid-second" data-photo="1" aria-label="Open our candid photo"><img src="assets/little-moment.webp" alt="A candid, slightly blurry moment together"><span class="polaroid-caption">the beautifully blurry ones ♡</span><span class="tape tape-b" aria-hidden="true"></span></button>
+        </div>
+        <p class="photo-tip">tap a photo to take a closer look <span aria-hidden="true">↗</span></p>
+      </div>
+    </section>
+
+    <section class="song-section section" id="our-song" aria-labelledby="song-title">
+      <div class="container song-shell">
+        <div class="song-art">
+          <div class="song-record" aria-hidden="true"><div class="record-label"><span>S ♡ Z</span><small>our song</small></div></div>
+          <span class="song-art-caption">some songs just stay with you ♡</span>
+        </div>
+        <div class="song-copy">
+          <span class="eyebrow">A LITTLE PIECE OF OUR STORY</span>
+          <h2 id="song-title">And then there is<br><em>our song.</em></h2>
+          <div class="song-track-info"><span class="song-note-icon" aria-hidden="true">♫</span><div><strong>Let Me Down Slowly</strong><span>Alec Benjamin</span></div></div>
+          <p>Some songs remind you of a moment. This one reminds me of us, of five years of memories, all the little things, and the way a familiar melody can bring someone to mind.</p>
+          <div class="song-actions"><a class="btn btn-rose" href="https://music.apple.com/us/song/1551809345" target="_blank" rel="noopener noreferrer" aria-label="Listen to Let Me Down Slowly by Alec Benjamin in Apple Music">Listen on Apple Music <span aria-hidden="true">♫</span></a><a class="song-video-link" href="https://www.youtube.com/watch?v=50VNCymT-Cs" target="_blank" rel="noopener noreferrer">Official music video <span aria-hidden="true">↗</span></a></div>
+          <p class="song-hint">Tap to play. Apple Music or YouTube opens on your iPhone.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reasons section" id="little-things" aria-labelledby="reasons-title">
+      <div class="container"><div class="section-heading center"><span class="eyebrow">03 / THINGS YOU SHOULD KNOW</span><h2 id="reasons-title">Just three of the<br><em>million little reasons.</em></h2><p>Flip each card. There's something waiting on the other side.</p></div><div class="reason-grid" id="reason-grid"></div><p class="tiny-note">and yes, “you're the cutest” definitely deserves its own card</p></div>
+    </section>
+
+    <section class="wishes section" id="wishes" aria-labelledby="wishes-title">
+      <div class="wish-decor wish-decor-left" aria-hidden="true">✧</div><div class="wish-decor wish-decor-right" aria-hidden="true">✦</div>
+      <div class="container wishes-layout">
+        <div class="wishes-copy"><span class="eyebrow eyebrow-light">04 / TWENTY-TWO TINY WISHES</span><h2 id="wishes-title">22 stars.<br><em>22 wishes.</em><br>All yours.</h2><p>Every little star has a wish for your new year. Tap as many as you like and collect a whole sky of good things.</p><div class="wish-progress-wrap"><div class="wish-progress-text"><span>stars discovered</span><strong id="wish-progress-count">0 / 22</strong></div><div class="wish-progress" role="progressbar" id="wish-progress" aria-valuemin="0" aria-valuemax="22" aria-valuenow="0" aria-label="Birthday wishes discovered"><span id="wish-progress-fill"></span></div></div></div>
+        <div class="constellation-box"><div class="constellation-top"><span>your very own little sky</span><span>✦ ✧ ♡</span></div><div class="star-grid" id="star-grid" aria-label="22 interactive birthday wishes"></div><div class="wish-display" id="wish-display" role="status" aria-live="polite"><span class="wish-number">a little reminder</span><p>Pick a star, birthday girl. ♡</p></div></div>
+      </div>
+    </section>
+
+    <section class="cake-section section" id="cake" aria-labelledby="cake-title">
+      <div class="container cake-layout"><div class="cake-copy"><span class="eyebrow">05 / MAKE A WISH</span><h2 id="cake-title">The candles are<br><em>waiting for you.</em></h2><p>One for the past, one for the present, and one for all the beautiful things still ahead. Tap the flames to blow them out.</p><button type="button" id="blow-all" class="btn btn-rose">Blow out all the candles <span aria-hidden="true">✧</span></button><p class="cake-message" id="cake-message" aria-live="polite">don't forget to make a wish first ♡</p></div>
+        <div class="cake-stage"><div class="cake-halo"></div><span class="cake-stamp cake-stamp-one" aria-hidden="true">✧</span><span class="cake-stamp cake-stamp-two" aria-hidden="true">♡</span><div class="cake-object" aria-label="A layered pink cake with three candles and a number 22 topper"><div class="cake-age">22</div><div class="candles"><button class="candle" type="button" aria-label="Blow out the past candle"><span class="flame"></span><span class="wick"></span><span class="candle-stick"></span></button><button class="candle" type="button" aria-label="Blow out the present candle"><span class="flame"></span><span class="wick"></span><span class="candle-stick"></span></button><button class="candle" type="button" aria-label="Blow out the future candle"><span class="flame"></span><span class="wick"></span><span class="candle-stick"></span></button></div><div class="icing"></div><div class="cake-top"></div><div class="cake-base"><span class="cake-polka dot-one"></span><span class="cake-polka dot-two"></span><span class="cake-polka dot-three"></span><span class="cake-polka dot-four"></span><span class="cake-polka dot-five"></span></div><div class="cake-tray"></div></div><div id="cake-done" class="cake-done" hidden>Wish made. May 22 be gentle and magical. ♡</div></div>
+      </div>
+    </section>
+
+    <section class="letter-section section" id="letter" aria-labelledby="letter-title">
+      <div class="container letter-grid"><div class="letter-art"><div class="letter-bubble" aria-hidden="true"></div><button class="envelope" id="envelope" type="button" aria-expanded="false" aria-controls="letter-card" aria-label="Open the letter written for Zaynab"><span class="env-back"></span><span class="env-peek">to zaynab, ♡</span><span class="env-front"></span><span class="env-flap"></span><span class="env-seal">♥</span></button><span class="env-tap" id="env-tap">tap the little envelope to open it ↗</span></div><div class="letter-copy"><span class="eyebrow">06 / THE WORDS I WANTED TO SAY</span><h2 id="letter-title">A letter,<br><em>just for you.</em></h2><p>Some words are easier to put into a little corner of the internet than into an ordinary birthday card.</p><div class="letter-card" id="letter-card" hidden><div class="letter-topline">To Zaynab, on your 22nd birthday</div><p id="letter-text"></p><div class="letter-signature">with love,<br><strong>Saad ♡</strong></div></div></div></div>
+    </section>
+
+    <section class="final-section section" id="final" aria-labelledby="final-title"><div class="final-glow" aria-hidden="true"></div><div class="container final-content"><span class="final-ornament" aria-hidden="true">✦ &nbsp; ♡ &nbsp; ✦</span><span class="eyebrow">07 / ONE LAST LITTLE THING</span><h2 id="final-title">If I could give you<br><em>one more thing...</em></h2><p>It would be a reminder you can take with you, wherever this year takes you.</p><button type="button" class="present" id="present" aria-expanded="false" aria-controls="final-reveal" aria-label="Open your final birthday surprise"><span class="present-lid"><span class="present-bow">✿</span></span><span class="present-box"><span class="present-ribbon"></span></span><span class="present-caption">one last surprise ↗</span></button><div id="final-reveal" class="final-reveal" hidden><span class="final-reveal-icon" aria-hidden="true">♡</span><p>You deserve to feel loved, celebrated, and completely yourself, not just today, but every day.</p><strong>Happy 22nd birthday, Zaynab.</strong><span>I'm really glad I met you that day, five years ago. Love, Saad ♡</span></div></div></section>
+  </main>
+
+  <footer><div class="container footer-inner"><span>made with love, by Saad, for Zaynab ♡</span><span>five years since hello · a new birthday to celebrate</span><a href="#top">back to the stars ↑</a></div></footer>
+
+  <dialog id="photo-dialog" class="photo-dialog" aria-label="Enlarged scrapbook photo"><button type="button" class="dialog-close" id="photo-close" aria-label="Close photo">×</button><button type="button" class="dialog-arrow dialog-prev" id="photo-prev" aria-label="Previous photo">‹</button><figure><img id="dialog-image" alt=""><figcaption id="dialog-caption"></figcaption></figure><button type="button" class="dialog-arrow dialog-next" id="photo-next" aria-label="Next photo">›</button><span class="dialog-instruction">swipe left or right to see the next photo · tap × to close</span></dialog>
+</body>
+</html>
